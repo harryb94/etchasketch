@@ -5,7 +5,14 @@
 
 .cell {
     border: solid;
+    border-width: 1px;
     border-color: black;
     height: 5vh;
     width: 5vh;
+    border-radius: 4px;    
 }
+
+.cell:hover{
+    background-color: black;
+}
+
