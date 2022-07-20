@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+}
+
+
+.cell {
+    border: solid;
+    border-color: black;
+    height: 5vh;
+    width: 5vh;
+}
