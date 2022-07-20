@@ -1,8 +1,6 @@
 let squareCount = 16;
 
-//let container = document.querySelector('#container');
 let gridRows = document.querySelector('#gridRows');
-//let gridColumns = document.querySelector('#gridColumns');
 
 function makeGrid(squareCount) {
     for (let i = 0; i < squareCount; i++) {
@@ -19,6 +17,11 @@ function makeGrid(squareCount) {
     }
 }
 
-
 makeGrid(squareCount);
-console.log(squareCount);
+
+let cells = document.querySelectorAll('.cell');
+cells.forEach((cell) => {
+    cell.addEventListener('click', () => {
+        cell.setAttribute('style', 'background-color: black');
+    });
+})
