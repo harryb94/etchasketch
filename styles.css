@@ -1,8 +1,19 @@
-#container {
+body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    height: 50vh;
+    width: 50vh;
+    justify-content: center;
+    margin: 50px;
+    flex: auto;
 }
 
 .row {
@@ -21,5 +32,9 @@
 
 .cell:hover{
     background-color: black;
+}
+
+footer {
+    margin-top: auto;
 }
 
