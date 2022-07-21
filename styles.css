@@ -32,13 +32,12 @@ button {
     display: flex;
 }
 
-
 .cell {
     border: solid;
     border-width: 1px;
     border-color: black;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     border-radius: 4px;    
 }
 

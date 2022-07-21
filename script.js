@@ -1,5 +1,4 @@
 let squareCount = 16;
-
 let gridRows = document.querySelector('#gridRows');
 
 function makeGrid(squareCount) {
@@ -13,25 +12,17 @@ function makeGrid(squareCount) {
         cell.classList.add('cell');
         row.appendChild(cell); 
         }
-        
     }
 }
 
-makeGrid(squareCount);
-
+function draw() {
 let cells = document.querySelectorAll('.cell');
 cells.forEach((cell) => {
     cell.addEventListener('click', () => {
         cell.setAttribute('style', 'background-color: black');
     });
 })
-
-let button = document.querySelector('#btn');
-button.addEventListener('click', () => {
-    clearGrid();
-    let squareCount = prompt('Number of squares per side?');
-    makeGrid(squareCount);
-});
+}
 
 function clearGrid() {
     let child = gridRows.lastElementChild;
@@ -40,3 +31,14 @@ function clearGrid() {
         child = gridRows.lastElementChild;
     }
     }
+
+let button = document.querySelector('#btn');
+button.addEventListener('click', () => {
+    clearGrid();
+    let squareCount = prompt('Number of squares per side?');
+    makeGrid(squareCount);
+    draw();
+});
+
+makeGrid(squareCount);
+draw();
