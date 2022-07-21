@@ -25,3 +25,18 @@ cells.forEach((cell) => {
         cell.setAttribute('style', 'background-color: black');
     });
 })
+
+let button = document.querySelector('#btn');
+button.addEventListener('click', () => {
+    clearGrid();
+    let squareCount = prompt('Number of squares per side?');
+    makeGrid(squareCount);
+});
+
+function clearGrid() {
+    let child = gridRows.lastElementChild;
+    while (child){
+        gridRows.removeChild(child);
+        child = gridRows.lastElementChild;
+    }
+    }

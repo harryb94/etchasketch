@@ -5,6 +5,18 @@ body {
     height: 100vh;
     flex-direction: column;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: thistle;
+    border-radius: 4px;
 }
 
 #container {
@@ -12,7 +24,7 @@ body {
     height: 50vh;
     width: 50vh;
     justify-content: center;
-    margin: 50px;
+    margin: 10px;
     flex: auto;
 }
 
@@ -36,5 +48,6 @@ body {
 
 footer {
     margin-top: auto;
+    margin-bottom: 5px;
 }
 
