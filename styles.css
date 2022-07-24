@@ -21,24 +21,30 @@ button {
 
 #container {
     display: flex;
-    height: 50vh;
-    width: 50vh;
+    height: 500px;
+    width: 500px;
     justify-content: center;
     margin: 10px;
-    flex: auto;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#gridRows {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    flex-direction: column;
+    
 }
 
 .row {
     display: flex;
+    flex-grow: 1;
 }
 
 .cell {
-    border: solid;
-    border-width: 1px;
-    border-color: black;
-    height: 4vh;
-    width: 4vh;
-    border-radius: 4px;    
+    flex: 1;
 }
 
 .cell:hover{
