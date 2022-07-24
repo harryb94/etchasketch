@@ -18,7 +18,7 @@ function makeGrid(squareCount) {
 function draw() {
 let cells = document.querySelectorAll('.cell');
 cells.forEach((cell) => {
-    cell.addEventListener('click', () => {
+    cell.addEventListener('mouseover', () => {
         cell.setAttribute('style', 'background-color: black');
     });
 })
