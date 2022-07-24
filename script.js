@@ -35,9 +35,14 @@ function clearGrid() {
 let button = document.querySelector('#btn');
 button.addEventListener('click', () => {
     clearGrid();
-    let squareCount = prompt('Number of squares per side?');
-    makeGrid(squareCount);
-    draw();
+    let squareCount = prompt('Number of squares per side? (Max: 100)');
+    if (squareCount > 100){
+        alert('Invalid input');
+    }
+    else{
+        makeGrid(squareCount);
+        draw();
+    }
 });
 
 makeGrid(squareCount);
